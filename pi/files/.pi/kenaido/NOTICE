@@ -1,0 +1,90 @@
+kenaido
+Copyright (c) 2026 Stefano Marcolini.
+
+This work is licensed under the Apache License, Version 2.0 (the "License"),
+except for the files listed below. A copy of the License is in the LICENSE
+file and at https://www.apache.org/licenses/LICENSE-2.0.
+
+The work is provided "AS IS", without warranties or conditions of any kind,
+and you use it entirely at your own risk (sections 7 and 8 of the License).
+Where the applicable law does not allow a warranty or a liability to be
+excluded or limited, the exclusion or limit applies only as far as that law
+allows.
+
+Files under a different license
+-------------------------------
+
+The files below are licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0),
+https://creativecommons.org/licenses/by-sa/4.0/legalcode, and not under the
+Apache License. Each one describes content from one or more of the guides
+credited below, in kenaido's own words, and was changed from them: it is
+reworded, reorganized, and shortened, and it adds kenaido's own additions and
+adaptations. Each file says so near its top. Any other passage in kenaido
+that describes one of these guides is also under CC BY-SA 4.0, and not under
+the Apache License. If you share one of these files, changed or not, keep
+these credits and the license. If you share a changed version, it must be
+under CC BY-SA 4.0 or a compatible license.
+
+The paths are those of the kenaido pack (product/ in the kenaido repository),
+except DISCLAIMER.md, which sits beside this file. The packages keep the same
+file names; their role agents are generated from the role files, and carry the
+same license.
+
+  DISCLAIMER.md
+
+  rules/scrum.md                 rules/flow.md
+  rules/value.md                 rules/team.md
+  rules/improvement.md           rules/README.md
+  departments/README.md          docs/lifecycle-flow.md
+  departments/product-engineering/roles/architect.md
+  departments/product-engineering/roles/product-owner.md
+  departments/product-engineering/roles/scrum-master.md
+  departments/product-engineering/roles/developer.md
+  departments/product-engineering/roles/infrastructure-engineer.md
+  departments/people-operations/roles/agile-leader.md
+  departments/people-operations/roles/project-manager.md
+  departments/security-risk/roles/risk-manager.md
+  templates/planning.md          templates/sprint-backlog.md
+  templates/review.md            templates/retrospective.md
+  templates/product-backlog-item.md
+  templates/product-backlog-item.yml
+  toolbox/README.md              skills/delegate-task/SKILL.md
+
+The guides, and their credits:
+
+  The 2020 Scrum Guide (November 2020)
+    Source:   https://scrumguides.org/scrum-guide.html
+    Credit:   (c) 2020 Ken Schwaber and Jeff Sutherland
+    License:  CC BY-SA 4.0
+
+  The Kanban Guide for Scrum Teams (January 2021)
+    Source:   https://www.scrum.org/resources/online-kanban-guide-scrum-teams
+              (the credit below is as the guide's PDF edition states it)
+    Credit:   (c) 2021 Scrum.org. Developed and sustained by Scrum.org,
+              Daniel Vacanti, and Yuval Yeret
+    License:  CC BY-SA 4.0
+
+  The Evidence-Based Management Guide (May 2024)
+    Source:   https://www.scrum.org/resources/
+              online-evidence-based-management-guide
+    Credit:   Copyright Scrum.org
+    License:  CC BY-SA 4.0
+
+Names
+-----
+
+The License gives no right to use the names "kenaido" or "agentic-bytes"
+(section 6 of the License), except to describe where the work comes from.
+Nothing in this notice gives any right to anyone else's names or marks
+either: "Scrum Guide", "Kanban Guide for Scrum Teams", "Evidence-Based
+Management", "Nexus", the names of the coding agent tools, platforms, and
+services kenaido mentions, and any other trade name or trademark belong to
+their owners. kenaido uses them only to refer to those products, and is not
+affiliated with or endorsed by their owners.
+
+Other third-party material
+--------------------------
+
+None is included. Tools that kenaido's own checks run are not part of this
+work and remain under their own licenses.

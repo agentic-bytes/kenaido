@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "kenaido",
+  "description": "kenaido 1.0.0: rules, role agents, and skills for running a project's whole life cycle inside Scrum, and a guardrail that refuses changes on main. The agents are AI models playing roles, not people."
+}

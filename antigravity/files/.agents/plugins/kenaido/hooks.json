@@ -1,0 +1,25 @@
+{
+  "kenaido-guardrail": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "i=$(cat 2>/dev/null); w=; case \"$i\" in *'\"workspacePaths\"'*) w=${i#*'\"workspacePaths\"'}; w=${w#*'\"'}; w=${w%%'\"'*};; esac; case \"$w\" in /*) ;; *) w=;; esac; p=; for c in ${w:+\"$w/.agents/plugins/kenaido\"} \"$HOME/.gemini/config/plugins/kenaido\" \"$HOME/.gemini/antigravity-cli/plugins/kenaido\"; do if [ -z \"$p\" ] && [ -r \"$c/hooks/no-main-edit.sh\" ]; then p=\"$c/hooks/no-main-edit.sh\"; fi; done; if [ -n \"$p\" ]; then sh \"$p\" \"$i\" 2>/dev/null || true; else printf '%s\\n' '{\"decision\": \"ask\", \"reason\": \"kenaido warning: the guardrail that refuses edits, shell commands and MCP tool calls on main or master cannot run, so none of them are being refused there. Reason: its script in .agents/plugins/kenaido/hooks/ is missing. Install the kenaido Antigravity plugin into this project again. You decide this call.\"}'; fi",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  },
+  "kenaido-guardrail-self-test": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "i=$(cat 2>/dev/null); w=; case \"$i\" in *'\"workspacePaths\"'*) w=${i#*'\"workspacePaths\"'}; w=${w#*'\"'}; w=${w%%'\"'*};; esac; case \"$w\" in /*) ;; *) w=;; esac; p=; for c in ${w:+\"$w/.agents/plugins/kenaido\"} \"$HOME/.gemini/config/plugins/kenaido\" \"$HOME/.gemini/antigravity-cli/plugins/kenaido\"; do if [ -z \"$p\" ] && [ -r \"$c/hooks/no-main-edit.sh\" ]; then p=\"$c/hooks/no-main-edit.sh\"; fi; done; if ! command -v git >/dev/null 2>&1; then printf '%s\\n' '{\"injectSteps\": [{\"ephemeralMessage\": \"kenaido warning: the guardrail that refuses edits, shell commands and MCP tool calls on main or master cannot run, so none of them are being refused there. Reason: git was not found, so it cannot tell which branch is checked out. Install git, or put it on PATH. Tell the person this, in plain words, before anything else.\"}]}'; elif [ -z \"$p\" ]; then printf '%s\\n' '{\"injectSteps\": [{\"ephemeralMessage\": \"kenaido warning: the guardrail that refuses edits, shell commands and MCP tool calls on main or master cannot run, so none of them are being refused there. Reason: its script in .agents/plugins/kenaido/hooks/ is missing. Install the kenaido Antigravity plugin into this project again. Tell the person this, in plain words, before anything else.\"}]}'; else printf '%s\\n' '{}'; fi",
+        "timeout": 15
+      }
+    ]
+  }
+}

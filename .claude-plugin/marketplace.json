@@ -1,0 +1,15 @@
+{
+  "name": "agentic-bytes",
+  "owner": {
+    "name": "agentic-bytes",
+    "url": "https://github.com/agentic-bytes"
+  },
+  "description": "kenaido: role agents modeled on Scrum (AI, not people), with rules and skills, for coding agents.",
+  "plugins": [
+    {
+      "name": "kenaido",
+      "source": "./plugins/kenaido",
+      "description": "Role agents modeled on Scrum (AI, not people), with rules and skills. Run /kenaido:setup in a project to install the rules. See DISCLAIMER.md."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# The releases repository's pipeline (PBI-108). Built by kenaido's release
+# scripts; do not edit this copy by hand. It runs scripts/check.sh, which pins
+# every tool by version and digest (`TEST-4`, `TEST-5`).
+name: ci
+
+# When this runs (PBI-147), to spend the free Actions minutes only when needed.
+# Work in progress is checked locally with scripts/check.sh; the pipeline runs
+# once a pull request is ready. The repository variable CI_MODE changes that:
+#   ready  (the default, when unset): pull requests that are not drafts, on
+#          each push while ready, and on demand
+#   always: every pull request, drafts included, and on demand
+#   manual: only on demand (gh workflow run ci --ref <branch>), still once
+#           before every merge
+# A skipped job starts no runner (seen on a draft pull request; GitHub's
+# billing page does not say how it counts). There is no run after a merge to
+# main: every pull request is rebased on main and checked before it merges.
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+  workflow_dispatch:
+
+# A newer push to the same pull request cancels the run in progress.
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.CI_MODE == 'always' ||
+      (vars.CI_MODE != 'manual' && github.event.pull_request.draft == false)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the full history (the secret scan covers every commit)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Run all checks
+        run: scripts/check.sh

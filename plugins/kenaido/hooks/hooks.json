@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^(?:Edit|Write|NotebookEdit|Bash|PowerShell|Monitor|mcp__.*)$",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "p=\"${CLAUDE_PLUGIN_ROOT}/hooks/no-main-edit.sh\"; if [ -r \"$p\" ]; then sh \"$p\"; else printf '%s\\n' '{\"systemMessage\": \"kenaido warning: the guardrail that refuses edits, shell commands and MCP tool calls on main or master cannot run, because its script hooks/no-main-edit.sh is missing from the kenaido plugin. This action was NOT checked. Update or reinstall the plugin (/plugin).\"}'; fi"
+          },
+          {
+            "type": "command",
+            "command": "echo `# <#` > /dev/null; cat > /dev/null; exit 0\n#> > $null\npowershell -NoProfile -ExecutionPolicy Bypass -File \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\no-main-edit.ps1\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+# License of this file: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/legalcode), not Apache-2.0
+# like most of kenaido. It describes, in kenaido's own words, content from a guide listed in the NOTICE
+# file that comes with kenaido, offered under the same license. The credits are in that file.
+name: Product Backlog item
+description: A piece of work for the Product Backlog, written so anyone can understand it (SCRUM-13).
+title: "PBI-NN: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Write in plain words (COMM-3). Every item meets the team's Definition of Done. The acceptance criteria below are this item's own conditions. The "As a / I want to / So that" form and acceptance criteria are kenaido additions; the Scrum Guide names neither (SCRUM-4).
+  - type: input
+    id: as-a
+    attributes:
+      label: As a
+      description: The role that needs this — a person or an agent role, for example "the project owner" or "a Developer agent".
+    validations:
+      required: true
+  - type: textarea
+    id: i-want-to
+    attributes:
+      label: I want to
+      description: The scope — what should exist or be possible when this is done. One clear outcome, small enough to be Done in one Sprint.
+    validations:
+      required: true
+  - type: textarea
+    id: so-that
+    attributes:
+      label: So that
+      description: The value — who benefits, and how. Outcomes, not activity (VALUE-3).
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      description: The area this item belongs to. The same value is applied as the item's "topic:" label.
+      options:
+        - pipeline
+        - scrum-process
+        - governance
+        - continuity
+        - agent-platform
+        - product-discovery
+        - legal-and-naming
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent this is — an input to the backlog's order, which the Product Owner sets with the board's Order field (Scrum orders the backlog; it does not rank by priority alone). Applied as the item's "priority:" label.
+      options:
+        - critical
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort
+      description: The Developers' estimate of relative effort (1, 2, 3, 5, 8, or 13). It replaces the earlier size labels (XS, S, M, L), which stay only as history. **13 means the item is too big for one Sprint and must be split** (Scrum Guide). Set on the board's Effort field; refined when the Developers size the item.
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "5"
+        - "8"
+        - "13"
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Every item meets the company-wide Definition of Done. Add only stricter, item-specific conditions here, if any.
+      value: |
+        Meets the team's Definition of Done.
+        Item-specific additions: none.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: The checklist that shows this item is implemented. Each line is checkable by someone who did not do the work.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Links and details
+      description: Decisions, resources, evidence, and anything learned later. Add comments as understanding grows.
+  - type: textarea
+    id: split
+    attributes:
+      label: Split
+      description: If this item is too big for one Sprint, or turned out larger than estimated, split it in refinement (Scrum Guide) — list the new items and the reason. Leave empty otherwise.

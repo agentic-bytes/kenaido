@@ -1,0 +1,10 @@
+# Scaling
+
+How kenaido works when several Scrum Teams, human or agent, build one product. Source: the [Nexus Guide](https://www.scrum.org/resources/online-nexus-guide) (January 2021).
+
+- **`SCALE-1` The Nexus Guide is the reference** for several Scrum Teams working on one product. Scaled Scrum is still Scrum (`SCRUM-3`), and the guide does not count a partial use of its framework as that framework.
+- **`SCALE-2` One product, one backlog, one Product Owner.** A group of roughly three to nine Scrum Teams shares a single Product Owner and a single Product Backlog. A Nexus Integration Team (the Product Owner, a Scrum Master, and members with the right skills) makes sure the teams' combined work comes together, finished and integrated, in every Sprint.
+- **`SCALE-3` Use the scaled events and artifacts.** Cross-Team Refinement, Nexus Sprint Planning, Nexus Daily Scrum, Nexus Sprint Review (replacing each team's own review), and Nexus Sprint Retrospective; a Nexus Sprint Backlog with a Nexus Sprint Goal; one Integrated Increment with a shared Definition of Done. Teams may use a stricter Definition of Done, never a weaker one.
+- **`SCALE-4` Make dependencies visible and reduce them.** Refine the backlog across teams so dependencies show up early, and change the product or team structure to remove them.
+- **`SCALE-5` More agents is not automatically more value.** The Nexus Guide notes that adding people adds dependencies and communication paths, and that scaling down can deliver more. Apply the same thinking to agents: add agents or groups of agents only when flow and value data show it helps (`FLOW-4`, `VALUE-5`).
+- **`SCALE-6` Its ideas only, in our own words, and the name only to refer to it.** The guide's web page marks "Nexus" as a trademark and shows no open license, and no open license for its text has been confirmed. So take its ideas, never its wording: describe them in our own words and link to the guide. Use the name "Nexus" only to refer to the guide or its framework. Give our own features neutral names, such as "multi-team scaling", never "Nexus" (`COMM-4`).
