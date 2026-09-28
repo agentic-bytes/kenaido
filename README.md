@@ -58,6 +58,8 @@ tail -n +4 RELEASE-MANIFEST | sha256sum -c --quiet && scripts/check-release-mani
 
 **If you don't:** stop, and don't install. What this shows and what it doesn't: [How each release is checked](#how-each-release-is-checked). Claude Code copies the plugin from that folder into its own cache, which this step does not check, and may update the marketplace in the background (**Good to know**, below) — check again after an update.
 
+**From `1.0.1` on, also check the release's signed tag** before you install: [Check the release's signed tag](#check-the-releases-signed-tag). It shows that the release is the one kenaido's maintainer signed, which this step alone cannot show.
+
 ### Step 4: install the plugin
 
 Type this inside Claude Code:
@@ -168,6 +170,8 @@ cd ..
 
 **If you don't:** stop, and don't install. What this shows, and what it doesn't: [How each release is checked](#how-each-release-is-checked).
 
+**From `1.0.1` on, also check the release's signed tag** before you install: [Check the release's signed tag](#check-the-releases-signed-tag). It shows that the release is the one kenaido's maintainer signed, which this step alone cannot show.
+
 ### Step 3: install into your project
 
 ```
@@ -246,6 +250,8 @@ tail -n +4 RELEASE-MANIFEST | sha256sum -c --quiet && scripts/check-release-mani
 cd ..
 ```
 **You should see:** a line ending `The release is what kenaido <version> at <commit> produced`. **If you don't:** stop, and don't install. What this shows, and what it doesn't: [How each release is checked](#how-each-release-is-checked).
+
+**From `1.0.1` on, also check the release's signed tag** before you install: [Check the release's signed tag](#check-the-releases-signed-tag). It shows that the release is the one kenaido's maintainer signed, which this step alone cannot show.
 
 ### Step 3: install into your project
 
@@ -336,6 +342,8 @@ cd ..
 ```
 **You should see:** a line ending `The release is what kenaido <version> at <commit> produced`. **If you don't:** stop, and don't install. What this shows, and what it doesn't: [How each release is checked](#how-each-release-is-checked).
 
+**From `1.0.1` on, also check the release's signed tag** before you install: [Check the release's signed tag](#check-the-releases-signed-tag). It shows that the release is the one kenaido's maintainer signed, which this step alone cannot show.
+
 ### Step 3: install into your project
 
 **On Windows, run this from Git Bash:** it then writes the guardrail's Windows commands. `--windows` or `--posix` chooses by hand.
@@ -395,6 +403,8 @@ cd ..
 ```
 **You should see:** a line ending `The release is what kenaido <version> at <commit> produced`. **If you don't:** stop, and don't install. What this shows, and what it doesn't: [How each release is checked](#how-each-release-is-checked).
 
+**From `1.0.1` on, also check the release's signed tag** before you install: [Check the release's signed tag](#check-the-releases-signed-tag). It shows that the release is the one kenaido's maintainer signed, which this step alone cannot show.
+
 ### Step 3: install into your project
 
 **On Windows, run this from a shell that has `sh`,** such as Git Bash or WSL. In the live session, it was run in WSL, and the project was then used from Windows.
@@ -452,15 +462,39 @@ Every release is built by kenaido's release scripts, and carries `RELEASE-MANIFE
 
 **To check a copy you have yourself,** use the verify step in each install section above. **What it shows:** every file is the one `RELEASE-MANIFEST` lists, with its build-time SHA-256, and nothing was added or removed. Your own `sha256sum` checks the files first, the checking script among them, so it runs only if it is the one the release was built with.
 
-**What it does not show, yet: that the release is genuine.** `RELEASE-MANIFEST` is written into the release it describes, so anyone able to change the release can write a matching one and still pass. Checking it against something the release cannot rewrite is not in place yet.
-
-**What checking the tag would add, once one exists (#369):** in a clone of kenaido, `git verify-tag <the release's tag>` before the `RELEASE-MANIFEST` check, against the project owner's published public key; a tag that fails to verify means don't install. **Today this step can't be run:** the project owner's signing key and signed release tags are not set up yet, so no release carries a tag to verify.
+**What it does not show on its own: that the release is genuine.** `RELEASE-MANIFEST` is written into the release it describes, so anyone able to change the release can write a matching one and still pass. The signed tag, below, is checked against something the release cannot rewrite.
 
 **Before each release is merged, an AI agent reviews it and the project's maintainer merges it:** kenaido's own pipeline, run from kenaido's `main`, rebuilds the release from the kenaido commit its `RELEASE-MANIFEST` names, which must be on kenaido's `main`. The reviewer agent then checks, with kenaido's own script and its own `sha256sum` and `git`, that every file in the release is the one its `RELEASE-MANIFEST` lists, and that this manifest's SHA-256 equals the rebuilt one's. So a file changed, added, or removed after the release was built stops the release before it is merged, whether its manifest was kept or rewritten to match.
 
-**Releases are built from a private source repository.** kenaido's own development happens in a repository the public cannot read; only its maintainer can run the check above, since only the maintainer can see the commit `RELEASE-MANIFEST`'s `source` line names. Everything a release needs to be checked by anyone else — every file's SHA-256, the version, and (once #369/#471 ship) a signed tag — ships in this public repository instead, so a reader can still verify the release matches what was published, without being able to inspect the commit it came from.
+**Releases are built from a private source repository.** kenaido's own development happens in a repository the public cannot read; only its maintainer can run the check above, since only the maintainer can see the commit `RELEASE-MANIFEST`'s `source` line names. Everything a release needs to be checked by anyone else — every file's SHA-256, the version, and, from `1.0.1` on, a signed tag — ships in this public repository instead, so a reader can still verify the release matches what was published, without being able to inspect the commit it came from.
 
 **The Claude Code marketplace entry is not pinned to a commit.** Claude Code's format can pin a plugin to an exact commit (`sha`), but kenaido's entry lives in this repository and is written in the same commit as the plugin it points to, so it cannot name that commit; and a marketplace itself can be pinned only to a branch or a tag, not to a commit ([Claude Code's documentation on plugin marketplaces](https://code.claude.com/docs/en/plugin-marketplaces), "Marketplace sources vs plugin sources"). A pin written by the same hands as the release would add nothing a changed release could not change too.
+
+### Check the release's signed tag
+
+From `1.0.1` on, every release has a tag, `v<version>`, signed by kenaido's maintainer with a key published on the maintainer's GitHub account, `stefanomarcolini`. **`v1.0.0` is not signed,** and stays as it was released: it can be checked only with the verify step above.
+
+In a terminal (`bash`, `git` 2.34 or later, `curl`, `sha256sum`; on Windows, Git Bash), with the version you want on the first line:
+```
+V=v1.0.1
+git clone -q https://github.com/agentic-bytes/kenaido.git "kenaido-$V"
+cd "kenaido-$V"
+git -c advice.detachedHead=false checkout -q "$V"
+curl -fsS https://api.github.com/users/stefanomarcolini/ssh_signing_keys | grep -o '"key": *"[^"]*"' | sed 's/^"key": *"/stefanomarcolini namespaces="git" /; s/"$//' > .git/allowed_signers
+git -c gpg.ssh.allowedSignersFile=.git/allowed_signers tag -v "$V" &&
+  git cat-file tag "$V" | grep -qxF "tag $V" &&
+  tail -n +4 RELEASE-MANIFEST | sha256sum -c --quiet && scripts/check-release-manifest.sh
+cd ..
+```
+The fifth line downloads the maintainer's published signing keys from GitHub into a file git reads. The sixth checks the tag's signature against them. The seventh checks that the name signed inside the tag is the version you asked for, since a signed tag can be copied under another name. Only if both are good does the eighth, the verify step above, run, so nothing from the release runs before its tag is checked.
+
+**You should see:** the tag's text, including the line `tag v1.0.1`; a line starting `Good "git" signature for stefanomarcolini`; and at the end, a line ending `The release is what kenaido 1.0.1 at <commit> produced`, with the version you asked for.
+
+**If you don't:** stop, and don't install. If the good signature line is there but nothing follows it, the tag was signed for a different version than the one you asked for. A line `Good "git" signature with ...` (without `for stefanomarcolini`) followed by `No principal matched.` is a failure: the tag is signed, but not with a key the maintainer has published. So is `error: no signature found`. The download can fail too (GitHub allows 60 requests an hour without signing in); then the check fails the same way, and you can try again later.
+
+**Install from what you checked.** For GitHub Copilot, Codex, Antigravity, and pi, install from this folder: use `kenaido-v1.0.1` wherever the install steps say `kenaido`. Claude Code installs from its own copy instead: from the folder that holds `kenaido-v1.0.1`, run `cmp kenaido-v1.0.1/RELEASE-MANIFEST "<installLocation>/RELEASE-MANIFEST"`, where `<installLocation>` is the folder from Claude Code's Step 3. No output means Claude Code's copy lists the same files, with the same SHA-256, as the signed release, and its Step 3 then checks every file against that list. Any other output means Claude Code holds a different release: check that release's tag instead.
+
+**What the tag check shows:** the tag, and with it every file of the commit it names, was signed with a key published on the `stefanomarcolini` GitHub account, for the version you asked for. A release changed after it was signed fails, whether its `RELEASE-MANIFEST` was rewritten to match or not. **What it does not show:** that the code is safe or free of mistakes; that the maintainer's GitHub account and signing key were never taken over (whoever controls either one can sign, or publish a key); that this is the newest release (an older signed tag still passes); or the copy Claude Code keeps in its own cache.
 
 ## Optional git hooks
 
