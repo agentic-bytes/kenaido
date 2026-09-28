@@ -1,6 +1,6 @@
 {
   "name": "kenaido",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "kenaido: role agents (AI models given Scrum and job-role names, not people), skills, and rules that simulate a Scrum life cycle with coding agents. Run /kenaido:setup in a project to install the rules there; until then, Claude Code sees an index of them. See DISCLAIMER.md.",
   "license": "Apache-2.0 AND CC-BY-SA-4.0",
   "author": {
