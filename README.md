@@ -114,7 +114,7 @@ Close this session and open a new one in the project before asking for a role ag
 - **the whole pack the rules cite** — toolbox, templates, guides, each department's interface — in the plugin, and in `.claude/kenaido/` once set up;
 - **one rule enforced, not just stated:** while `main` or `master` is checked out, Claude Code refuses a file edit or a shell command that could change it, and tells you to cut a work branch first (`GIT-1`).
 
-**What it loads into every session** (measured from the 1.0.2 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
+**What it loads into every session** (measured from the 1.0.3 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
 - **the rules, once `/kenaido:setup` has run:** 17 files, 100,971 characters, about 25,000 to 34,000 tokens, in every session of that project. Before setup, an index of them instead: 6,589 characters, about 1,600 to 2,200 tokens;
 - **the 41 role agents' names and descriptions:** 13,836 characters, about 3,500 to 4,600 tokens, and the 6 skills' names and descriptions: 1,435 characters. How much of these Claude Code puts into a session before one is used **has not been observed**.
 
@@ -203,7 +203,7 @@ It never overwrites a file of your own: if one is in the way, it stops before wr
 - **the role agents, in the agents dropdown at the bottom of Copilot Chat** — not under "Configure Agents… → Workspace", which manages an agent's file rather than listing it. **Observed:** the installed `kenaido-*` agents, for example `kenaido-architect`, appeared there on 2026-09-17. To add or edit an agent profile yourself: click **Configure Agents…**, then, under **Chat Agents**, click **Workspace** ([GitHub's current documentation](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/create-custom-agents-in-your-ide), read 2026-09-21). **Custom agents are in public preview for JetBrains IDEs**, per that page, so this can still change;
 - **the skills — not seen anywhere in the JetBrains UI.** `.github/skills/kenaido-*/` is on disk, but the same 2026-09-17 test found no menu that lists them.
 
-**What it loads into every session** (measured from the 1.0.2 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
+**What it loads into every session** (measured from the 1.0.3 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
 - **the rules, in full, in the kenaido block of `copilot-instructions.md`:** 102,175 characters, about 26,000 to 34,000 tokens, with every request Copilot sends from that project;
 - **the 41 role agents' names and descriptions:** 14,164 characters, and the 5 skills': 1,306 characters. Whether Copilot sends these before one is picked **has not been observed**.
 
@@ -279,7 +279,7 @@ It never overwrites a file of your own: if one is in the way, it stops before wr
 - **41 role agents**, as `kenaido-<role>`. Ask for one by name, and `/agent` lists them;
 - the skills, as files to read. **Not registered commands:** Codex registers skills through a plugin, and this is a file install.
 
-**What it loads into every session** (measured from the 1.0.2 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
+**What it loads into every session** (measured from the 1.0.3 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
 - **the rules index, in the kenaido block of `AGENTS.md`:** 2,337 characters, about 600 to 800 tokens; each rule is read only when it applies;
 - **the 41 role agents' names and descriptions:** 14,164 characters, about 3,500 to 4,700 tokens. Whether Codex sends them before an agent is used **has not been observed**. The skills are plain files, so nothing of them loads until one is read.
 
@@ -426,7 +426,7 @@ It writes into the project:
 - **a guardrail,** a pi extension, in `.pi/extensions/kenaido-guard/`;
 - **the rules, the complete roles, and the rest of the pack** — the toolbox, the templates, the guides, and each department's interface — in `.pi/kenaido/`.
 
-**What it loads into every session** (measured from the 1.0.2 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
+**What it loads into every session** (measured from the 1.0.3 package in characters; tokens are an estimate at 3 to 4 characters per token, not a count):
 - **the kenaido block** in the context file: 2,841 characters, about 700 to 950 tokens, sent with every request;
 - **the 41 role prompts' and 5 skills' descriptions:** 14,164 and 1,306 characters. Which of them pi sends before one is called **has not been observed**. The full rules and roles stay in `.pi/kenaido/` until read.
 
@@ -476,7 +476,7 @@ Every release has a tag, `v<version>`, signed by kenaido's maintainer with a key
 
 In a terminal (`bash`, `git` 2.34 or later, `curl`, `sha256sum`; on Windows, Git Bash), with the version you want on the first line:
 ```
-V=v1.0.2
+V=v1.0.3
 git clone -q https://github.com/agentic-bytes/kenaido.git "kenaido-$V"
 cd "kenaido-$V"
 git -c advice.detachedHead=false checkout -q "$V"
