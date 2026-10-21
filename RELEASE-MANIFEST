@@ -1,6 +1,6 @@
 kenaido-release-manifest 1
-source 2f7819ac6cefcf9edc5189072da5abb99e7a146f
-version 1.0.3
+source 9acba62afeba5722167acd129deb0bf708e2a0ed
+version 1.1.0
 57b0b7c1aaf84a4986e648a9af3e595ced64d34a24ebcef933933ec0e1764357  .claude-plugin/marketplace.json
 705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da  .gitattributes
 9c944df843c19258336d972e9ed0127b65e501292008f67431fbd788fed69ad4  .github/workflows/ci.yml
@@ -9,15 +9,15 @@ version 1.0.3
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  NOTICE
-ac37bf1d9fb3781babf1313d13d8d171658bb6e255e4183048ccc33755ab251f  README.md
-6a71b5c44b7c8b3a43430c4af50c27b7ba6e0548c2125f33fe03e32b639fc427  antigravity/.kenaido-antigravity-package
+d972b6151a1fffc5f961da377ef61a928f9d77fa0815d09db4d25268e76982cc  README.md
+cda30bf0e470876c71b8025b11ceb8ae28d76bd6a70c9b062ccd30a8d5602364  antigravity/.kenaido-antigravity-package
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  antigravity/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  antigravity/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  antigravity/NOTICE
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  antigravity/files/.agents/plugins/kenaido/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  antigravity/files/.agents/plugins/kenaido/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  antigravity/files/.agents/plugins/kenaido/NOTICE
-f5e5c9534532840fcd45bb002e69ed85c61dba2753450e26b448b7df1481e24d  antigravity/files/.agents/plugins/kenaido/VERSION
+1575e1af4a95f12f70b4ee6a6adce8160953d93ea17dc2611b90883ccc3ad3b8  antigravity/files/.agents/plugins/kenaido/VERSION
 08eb76ae9498986403debd5afe8c2dae9ee16fc4c58256f6efa1f7461be3ea7e  antigravity/files/.agents/plugins/kenaido/agents/kenaido-agile-leader.md
 6651d853a483f950cc45189a97cf0986c4b023c09f704ebdcec1167e76ed0d6b  antigravity/files/.agents/plugins/kenaido/agents/kenaido-ai-evaluation-specialist.md
 0cf092ce62bab58544d52452ec24e38a7c12e2fcd67f6f6bf82ef738a05c480a  antigravity/files/.agents/plugins/kenaido/agents/kenaido-ai-expert-developer.md
@@ -75,7 +75,7 @@ ecfedbbd14f69bee847b058c228a9238f993be409910f5a8788bbac4f2dbb0a9  antigravity/fi
 86dfce858e055b97668525998ed3cc127ab2c9dcf6e670235ca95a6d72a221b9  antigravity/files/.agents/plugins/kenaido/pack/departments/strategy/README.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  antigravity/files/.agents/plugins/kenaido/pack/docs/acceptable-use-policy.md
 beb95fb426995a8d1c2f14e0f2853c5ea0977ca67635f1e4178e38fd84118d2a  antigravity/files/.agents/plugins/kenaido/pack/docs/lifecycle-flow.md
-ce73e0b4dba0daab2d3a4d64f242805a0a597e8f5e88837c3b6802d8d95c9105  antigravity/files/.agents/plugins/kenaido/pack/docs/sprint-steps.md
+8c158f518fe6cf42100d366d453cd512cc543d9a5f5b7e7cc4e3303f73291002  antigravity/files/.agents/plugins/kenaido/pack/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  antigravity/files/.agents/plugins/kenaido/pack/docs/team-mode.md
 f1e6393efc5731489fee11857e9b5d657956d1eaeb065393677763123965bb5b  antigravity/files/.agents/plugins/kenaido/pack/rules/README.md
 4c78d202be828ff658474ff3b2ec823471bad06abb0064046a907d6b72dd9c95  antigravity/files/.agents/plugins/kenaido/pack/rules/analysis.md
@@ -104,8 +104,9 @@ a9f8c40de599cb5a17860e3ef620a08eb73b9044e1dd32602de1df0de8bd19f3  antigravity/fi
 aaadc692f8795a3703001616e5a01a43c78043562a7601445b6c5e69fa4c1bc0  antigravity/files/.agents/plugins/kenaido/pack/templates/review.md
 07d1bf9d21d6da3c4c4ad3ab0ecd624d670db20c771a6196dddc6f46163c8274  antigravity/files/.agents/plugins/kenaido/pack/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  antigravity/files/.agents/plugins/kenaido/pack/templates/state-file.md
-74bdd0bbe0475f684def62ac4d39c4a6dfbf610c9da4339cc5f4d495f7e9628a  antigravity/files/.agents/plugins/kenaido/pack/toolbox/README.md
+e837bf1c97f4bd4a69a34a32f28ca15d8d23a66945262360a57bfc1f17be7d33  antigravity/files/.agents/plugins/kenaido/pack/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  antigravity/files/.agents/plugins/kenaido/pack/toolbox/TEMPLATE.md
+3f171fb2612be0191f2947731d75beca9bc4e61042e29775880bcbe4715aaaed  antigravity/files/.agents/plugins/kenaido/pack/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  antigravity/files/.agents/plugins/kenaido/pack/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  antigravity/files/.agents/plugins/kenaido/pack/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  antigravity/files/.agents/plugins/kenaido/pack/toolbox/eisenhower-matrix.md
@@ -114,7 +115,7 @@ eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  antigravity/fi
 1de3b6e22b138d1de9a9e0ae17e38d3b3a8838cf6d9c94da31b4c15ff4226e46  antigravity/files/.agents/plugins/kenaido/pack/toolbox/question-set.md
 ebe60a2a5fa1e00add7315acd0a06d26ff7fb6dee914ab43aaefe537df38b7a2  antigravity/files/.agents/plugins/kenaido/pack/toolbox/swot.md
 8f994a0763701157687fa4aa4998810f67ef88190098a5904f9ca447d41683fa  antigravity/files/.agents/plugins/kenaido/pack/toolbox/vital-essential-extra.md
-9e806a92381ad44d323c633179843a849dc19a5bc06c301f855b1b2c891685c9  antigravity/files/.agents/plugins/kenaido/plugin.json
+9af165c5b94dc1b5b30d421d56478dc3d087a999133416c59243e820381802d2  antigravity/files/.agents/plugins/kenaido/plugin.json
 dfda452b6ef81f34789232b4fcbbd4c34902e3b45090ca36450cc3dc17eec206  antigravity/files/.agents/plugins/kenaido/rules/kenaido.md
 7a13aea49748064d48ac88114ec932d574181a32bcaa42d82c8a80e804654126  antigravity/files/.agents/plugins/kenaido/skills/kenaido-delegate-task/SKILL.md
 118453b92ebb308ca22541560a7560f92bef3ff5bfd1cde2eee71bcba1e2e97d  antigravity/files/.agents/plugins/kenaido/skills/kenaido-record-decision/SKILL.md
@@ -124,7 +125,7 @@ a94635d170306fb28b8a4f5f2af78eaf20237039d1151f830b37c27990b53138  antigravity/fi
 bff64cc79548a8295669aa1509dfa54efcea94499eac227d0ffe586ee78d06e7  antigravity/hooks.windows.json
 2f35199e72348c056bcac72232201a03dff9c999dcd9982227a121b80df087d4  antigravity/install-git-hooks.sh
 7f539cbaa9a97668e2785a41a3f2ef7a0c79770d822de1777bfd9a39e9a39160  antigravity/install.sh
-67962303170a1e8f4719a5fa4167d99807fa884d4240a826eef77e372114d3a7  codex/.kenaido-codex-package
+0c1df86c3120d34754f783733ee4f97878b030af8f5e992b6d2392de1d12adae  codex/.kenaido-codex-package
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  codex/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  codex/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  codex/NOTICE
@@ -187,7 +188,7 @@ c7babacddcb8a84509f756a772eb668fc82f3eef173d7f531bc05072b34953f6  codex/files/.c
 de8964b46b564c685ec961c6a8609fe18ff58e1b38808955169af56f0fb7b761  codex/files/.codex/kenaido/departments/strategy/README.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  codex/files/.codex/kenaido/docs/acceptable-use-policy.md
 beb95fb426995a8d1c2f14e0f2853c5ea0977ca67635f1e4178e38fd84118d2a  codex/files/.codex/kenaido/docs/lifecycle-flow.md
-3a784c881964e1b9df97701bb587b7b72a781ed47beed27deb23be309b7c3431  codex/files/.codex/kenaido/docs/sprint-steps.md
+2d82c5bbb7bff7ed3f3786e2849a658ccfdc39adb9c18fbd1b444813e5292645  codex/files/.codex/kenaido/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  codex/files/.codex/kenaido/docs/team-mode.md
 8801a34ecca1af4616948ae3143382f203dda9b3a8f12fe526100509e7d49474  codex/files/.codex/kenaido/no-main-edit.ps1
 5b266940d9aa7921dd43b43d93a0d7af4df44da86b91845e50921e6462abe3c3  codex/files/.codex/kenaido/no-main-edit.sh
@@ -223,8 +224,9 @@ a9f8c40de599cb5a17860e3ef620a08eb73b9044e1dd32602de1df0de8bd19f3  codex/files/.c
 e11a0c7203bcbc8ac79c60eb68378b8e544010eb7e4b4563707ab1028b61a925  codex/files/.codex/kenaido/templates/review.md
 5fa8ef91416b815010a88f29480b6d3d92f8e364a16cbb389be5ac4e1031d27d  codex/files/.codex/kenaido/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  codex/files/.codex/kenaido/templates/state-file.md
-60c238d389f2633afedaf346896bb034d4819d2f4ad95c9ef8cdbff11fbde093  codex/files/.codex/kenaido/toolbox/README.md
+1d0f9b3658a6b40d5a0fd96fdb8933805f629c7b5129f92b7ee83f59e1e44b26  codex/files/.codex/kenaido/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  codex/files/.codex/kenaido/toolbox/TEMPLATE.md
+dc6e1fa1b5b74eb233300832e082b94efb974afda9f83c537d8190df1f05ed81  codex/files/.codex/kenaido/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  codex/files/.codex/kenaido/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  codex/files/.codex/kenaido/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  codex/files/.codex/kenaido/toolbox/eisenhower-matrix.md
@@ -235,7 +237,7 @@ ebe60a2a5fa1e00add7315acd0a06d26ff7fb6dee914ab43aaefe537df38b7a2  codex/files/.c
 8f994a0763701157687fa4aa4998810f67ef88190098a5904f9ca447d41683fa  codex/files/.codex/kenaido/toolbox/vital-essential-extra.md
 2f35199e72348c056bcac72232201a03dff9c999dcd9982227a121b80df087d4  codex/install-git-hooks.sh
 86f0e98b5e1b226fdf22850021673ae88e5dde63d73fd86b92433e00a650e407  codex/install.sh
-71154bff9abff417ff6eb55c6786dc75ce5d28d731d384013b45359ecf34f385  copilot/.kenaido-copilot-package
+af23d96a956dccbca2afc38388bb81a58554d68974d876d915661496eeb3fa36  copilot/.kenaido-copilot-package
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  copilot/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  copilot/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  copilot/NOTICE
@@ -298,7 +300,7 @@ e07b951572f7d408c5607ad65ef40a76039172eb9eda297cf4a9b1c501549130  copilot/files/
 8813682683706711136585c34b6b22a77fdcc90616d36437cd7f9e06ea8710fd  copilot/files/.github/kenaido/departments/strategy/README.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  copilot/files/.github/kenaido/docs/acceptable-use-policy.md
 beb95fb426995a8d1c2f14e0f2853c5ea0977ca67635f1e4178e38fd84118d2a  copilot/files/.github/kenaido/docs/lifecycle-flow.md
-ce73e0b4dba0daab2d3a4d64f242805a0a597e8f5e88837c3b6802d8d95c9105  copilot/files/.github/kenaido/docs/sprint-steps.md
+8c158f518fe6cf42100d366d453cd512cc543d9a5f5b7e7cc4e3303f73291002  copilot/files/.github/kenaido/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  copilot/files/.github/kenaido/docs/team-mode.md
 3e423ad46498eb38061b8ae8891ab48d546bcda3ecd4070dfb6ab6359839b808  copilot/files/.github/kenaido/no-main-edit.ps1
 a985c5716c6a7b9de09e18f6096521bb019a2eb5e612e87ef3f1c44efdc90967  copilot/files/.github/kenaido/no-main-edit.sh
@@ -329,8 +331,9 @@ a9f8c40de599cb5a17860e3ef620a08eb73b9044e1dd32602de1df0de8bd19f3  copilot/files/
 aaadc692f8795a3703001616e5a01a43c78043562a7601445b6c5e69fa4c1bc0  copilot/files/.github/kenaido/templates/review.md
 07d1bf9d21d6da3c4c4ad3ab0ecd624d670db20c771a6196dddc6f46163c8274  copilot/files/.github/kenaido/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  copilot/files/.github/kenaido/templates/state-file.md
-74bdd0bbe0475f684def62ac4d39c4a6dfbf610c9da4339cc5f4d495f7e9628a  copilot/files/.github/kenaido/toolbox/README.md
+e837bf1c97f4bd4a69a34a32f28ca15d8d23a66945262360a57bfc1f17be7d33  copilot/files/.github/kenaido/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  copilot/files/.github/kenaido/toolbox/TEMPLATE.md
+3f171fb2612be0191f2947731d75beca9bc4e61042e29775880bcbe4715aaaed  copilot/files/.github/kenaido/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  copilot/files/.github/kenaido/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  copilot/files/.github/kenaido/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  copilot/files/.github/kenaido/toolbox/eisenhower-matrix.md
@@ -346,7 +349,7 @@ a7512d03ca590795a7e82652329c6938192faab5a1422df82dbcc13cacf77c66  copilot/files/
 acc23bb30dfb426d0bf9129f5dd859ba705601bc7fd4ab8fa03139c1898a5f09  copilot/files/.github/skills/kenaido-start-sprint/SKILL.md
 2f35199e72348c056bcac72232201a03dff9c999dcd9982227a121b80df087d4  copilot/install-git-hooks.sh
 ae49f6f0236accd852068ba646fba11e3b359afae3a1db326e66455103350f1e  copilot/install.sh
-0ae4450c99897a0abe9c63268562c7dd51b107d3183f0fab4a3dfa1fc438e914  pi/.kenaido-pi-package
+c83e345a706b7f04a3e5e62c494ba48102e625a7a10d7679cf2cd5414347d7e6  pi/.kenaido-pi-package
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  pi/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  pi/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  pi/NOTICE
@@ -355,7 +358,7 @@ b3f827707bc4839b28d7e08d31608a3dfcfd9731f532946a1d50cfd895c65677  pi/agents-bloc
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  pi/files/.pi/kenaido/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  pi/files/.pi/kenaido/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  pi/files/.pi/kenaido/NOTICE
-f5e5c9534532840fcd45bb002e69ed85c61dba2753450e26b448b7df1481e24d  pi/files/.pi/kenaido/VERSION
+1575e1af4a95f12f70b4ee6a6adce8160953d93ea17dc2611b90883ccc3ad3b8  pi/files/.pi/kenaido/VERSION
 b493cf06cd46d4aab762c882bd9dadae7a605feb86dee3edac74b5a191696f19  pi/files/.pi/kenaido/departments/README.md
 77cbbf275ea1b943d80ed33813a14389634a9440a8ae02e7abdab2b346bf8bcd  pi/files/.pi/kenaido/departments/customer-success/README.md
 955688a6109b7ec38a82c7902e1a5fa8edf6d1090d80a193adb3507d915585e3  pi/files/.pi/kenaido/departments/ethics-committee/README.md
@@ -369,7 +372,7 @@ f4826db17be93ad88aa98042e31334d3154b308f32c5a1d3e704a71928b88e14  pi/files/.pi/k
 391f5c264dbcf71b6b4c4bd7dd3504952d46cf3a97c7e572e92040c7507cae89  pi/files/.pi/kenaido/departments/strategy/README.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  pi/files/.pi/kenaido/docs/acceptable-use-policy.md
 beb95fb426995a8d1c2f14e0f2853c5ea0977ca67635f1e4178e38fd84118d2a  pi/files/.pi/kenaido/docs/lifecycle-flow.md
-ce73e0b4dba0daab2d3a4d64f242805a0a597e8f5e88837c3b6802d8d95c9105  pi/files/.pi/kenaido/docs/sprint-steps.md
+8c158f518fe6cf42100d366d453cd512cc543d9a5f5b7e7cc4e3303f73291002  pi/files/.pi/kenaido/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  pi/files/.pi/kenaido/docs/team-mode.md
 9509ff976f1342b14b28b567a4621b9b743570b14d36e299616f72831adc868e  pi/files/.pi/kenaido/roles/kenaido-agile-leader.md
 bb0ec34029ed7f3d328b0acd5a4c25ae6e7230205edc56e5c7c70218fba6937d  pi/files/.pi/kenaido/roles/kenaido-ai-evaluation-specialist.md
@@ -439,8 +442,9 @@ a9f8c40de599cb5a17860e3ef620a08eb73b9044e1dd32602de1df0de8bd19f3  pi/files/.pi/k
 aaadc692f8795a3703001616e5a01a43c78043562a7601445b6c5e69fa4c1bc0  pi/files/.pi/kenaido/templates/review.md
 07d1bf9d21d6da3c4c4ad3ab0ecd624d670db20c771a6196dddc6f46163c8274  pi/files/.pi/kenaido/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  pi/files/.pi/kenaido/templates/state-file.md
-74bdd0bbe0475f684def62ac4d39c4a6dfbf610c9da4339cc5f4d495f7e9628a  pi/files/.pi/kenaido/toolbox/README.md
+e837bf1c97f4bd4a69a34a32f28ca15d8d23a66945262360a57bfc1f17be7d33  pi/files/.pi/kenaido/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  pi/files/.pi/kenaido/toolbox/TEMPLATE.md
+3f171fb2612be0191f2947731d75beca9bc4e61042e29775880bcbe4715aaaed  pi/files/.pi/kenaido/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  pi/files/.pi/kenaido/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  pi/files/.pi/kenaido/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  pi/files/.pi/kenaido/toolbox/eisenhower-matrix.md
@@ -497,7 +501,7 @@ a7512d03ca590795a7e82652329c6938192faab5a1422df82dbcc13cacf77c66  pi/files/.pi/s
 acc23bb30dfb426d0bf9129f5dd859ba705601bc7fd4ab8fa03139c1898a5f09  pi/files/.pi/skills/kenaido-start-sprint/SKILL.md
 2f35199e72348c056bcac72232201a03dff9c999dcd9982227a121b80df087d4  pi/install-git-hooks.sh
 4212bacd24bc22fe1eecac7e5836698fa1c09ae1c2cab47b0addfbbf89e419fc  pi/install.sh
-e951d78d970048c22e77584fb391d1cd972bec7e4f98fbb737639aaa4877cc6c  plugins/kenaido/.claude-plugin/plugin.json
+493e9318ef41e3bee76021ca233890f474e3a84e28b26dcfae61b01f4145d466  plugins/kenaido/.claude-plugin/plugin.json
 97fccc87c4564d4efd53601e4487b833af6e4b7fd034d3816abb72456c84ff17  plugins/kenaido/DISCLAIMER.md
 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  plugins/kenaido/LICENSE
 a3ad95f64caa8d35d12c948a03460dcd8a68a9203cf4f236ce323069da5712f1  plugins/kenaido/NOTICE
@@ -555,7 +559,7 @@ afb086175e23121b9c369daa5096e216da4e0601f15835ae8db1669d116ad563  plugins/kenaid
 e9349fb4fd346518a3a5f9a84a58736db8233396b0e625fb75a949c909b7534a  plugins/kenaido/departments/strategy/README.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  plugins/kenaido/docs/acceptable-use-policy.md
 beb95fb426995a8d1c2f14e0f2853c5ea0977ca67635f1e4178e38fd84118d2a  plugins/kenaido/docs/lifecycle-flow.md
-2126b3705bcb062e29ae2ecdb29cdf871242cf4b1c7f1e49740f7ee4908eb8be  plugins/kenaido/docs/sprint-steps.md
+e8566ead1b19e5bcf94f215de6e1d96ed662cc1738428f0ef16f08221427799b  plugins/kenaido/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  plugins/kenaido/docs/team-mode.md
 520c514ff44baa5e932a5c391635f469d5443eefc33da53b79aa951af48c1edf  plugins/kenaido/hooks/hooks.json
 73ecf8b05d9f252e1de0446bedd7798ebdbcaf1540b7ff12185257e4cc0f333e  plugins/kenaido/hooks/no-main-edit.ps1
@@ -616,7 +620,7 @@ fe8a890c1ca07f2a9858f02361dcadb65345ad303dd34624552c6347ca080f6c  plugins/kenaid
 9e407f94cb963e4c590bfc5a98b02865e5c5d98be3e89546a1eb2c64853fd33f  plugins/kenaido/install/.claude/kenaido/departments/strategy/roles/partnerships-business-development-specialist.md
 1094097bb2754670da27986051e29f9ddafb70fc29b81d59a9197cf99261dd6f  plugins/kenaido/install/.claude/kenaido/docs/acceptable-use-policy.md
 5e438938d222195b55aa0cbfe55b2d02593197b56d00c6bc64bf5047a9029ee4  plugins/kenaido/install/.claude/kenaido/docs/lifecycle-flow.md
-2126b3705bcb062e29ae2ecdb29cdf871242cf4b1c7f1e49740f7ee4908eb8be  plugins/kenaido/install/.claude/kenaido/docs/sprint-steps.md
+e8566ead1b19e5bcf94f215de6e1d96ed662cc1738428f0ef16f08221427799b  plugins/kenaido/install/.claude/kenaido/docs/sprint-steps.md
 cb1f2c6d4a2c56df1e82eea0639639ad6b1f66e433f12626f5105dcdeed91e28  plugins/kenaido/install/.claude/kenaido/docs/team-mode.md
 68aab596a6ae556df7cde608364a7dcfe6fd5664caa71217879b51473e7fc089  plugins/kenaido/install/.claude/kenaido/rules/README.md
 55a024b1c5aef4acd6f8838fe460a4fd2beae8b4e9a6cf2dad1c98fc9d8cb57f  plugins/kenaido/install/.claude/kenaido/scripts/new-sprint.sh
@@ -633,8 +637,9 @@ f53da06a3e0f3aba5c8a2cd3a7ded23257f5217565e81dd66a0b90b17cd31660  plugins/kenaid
 6c5c98602e11680d76b07fe7d4c50c70fe7ffc4f8c2c3380d0a68c8a0e1cc0ea  plugins/kenaido/install/.claude/kenaido/templates/review.md
 f4587eae5f2d4ca22b56d5911890fc7ba30a42f1f1c74def65bc370fe927ec66  plugins/kenaido/install/.claude/kenaido/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  plugins/kenaido/install/.claude/kenaido/templates/state-file.md
-60c238d389f2633afedaf346896bb034d4819d2f4ad95c9ef8cdbff11fbde093  plugins/kenaido/install/.claude/kenaido/toolbox/README.md
+1d0f9b3658a6b40d5a0fd96fdb8933805f629c7b5129f92b7ee83f59e1e44b26  plugins/kenaido/install/.claude/kenaido/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  plugins/kenaido/install/.claude/kenaido/toolbox/TEMPLATE.md
+0e73303b1f0c7f3d09c4ae6828fb5c68bf9016b5e45aea2f58088187e17bb952  plugins/kenaido/install/.claude/kenaido/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  plugins/kenaido/install/.claude/kenaido/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  plugins/kenaido/install/.claude/kenaido/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  plugins/kenaido/install/.claude/kenaido/toolbox/eisenhower-matrix.md
@@ -695,8 +700,9 @@ f53da06a3e0f3aba5c8a2cd3a7ded23257f5217565e81dd66a0b90b17cd31660  plugins/kenaid
 6c5c98602e11680d76b07fe7d4c50c70fe7ffc4f8c2c3380d0a68c8a0e1cc0ea  plugins/kenaido/templates/review.md
 f4587eae5f2d4ca22b56d5911890fc7ba30a42f1f1c74def65bc370fe927ec66  plugins/kenaido/templates/sprint-backlog.md
 ab9a32ce992864a73fc702057020f2549b4036cbbccde17b60eee158838c4d30  plugins/kenaido/templates/state-file.md
-60c238d389f2633afedaf346896bb034d4819d2f4ad95c9ef8cdbff11fbde093  plugins/kenaido/toolbox/README.md
+1d0f9b3658a6b40d5a0fd96fdb8933805f629c7b5129f92b7ee83f59e1e44b26  plugins/kenaido/toolbox/README.md
 3868663ce1a0ec73d3123813e74fb40a29838df0b26011defad4f2ae2c13ea75  plugins/kenaido/toolbox/TEMPLATE.md
+0e73303b1f0c7f3d09c4ae6828fb5c68bf9016b5e45aea2f58088187e17bb952  plugins/kenaido/toolbox/depth-check.md
 5dc461972692812c8ab1a35d0a1c19e15b868ae1363f9185842c51257003a158  plugins/kenaido/toolbox/divide-and-conquer.md
 eff9e936ec5e6da05f0cf6c187284d533d4518d0a8ed848c24bc8484d2e8b7dc  plugins/kenaido/toolbox/dreamer-realist-critic.md
 16e9b5a853661b36a6c4b161d88c5cd9e83b03b48d57ec9facef15ceb3071019  plugins/kenaido/toolbox/eisenhower-matrix.md

@@ -476,7 +476,7 @@ Every release has a tag, `v<version>`, signed by kenaido's maintainer with a key
 
 In a terminal (`bash`, `git` 2.34 or later, `curl`, `sha256sum`; on Windows, Git Bash), with the version you want on the first line:
 ```
-V=v1.0.3
+V=v1.1.0
 git clone -q https://github.com/agentic-bytes/kenaido.git "kenaido-$V"
 cd "kenaido-$V"
 git -c advice.detachedHead=false checkout -q "$V"
