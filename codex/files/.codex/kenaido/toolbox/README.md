@@ -27,6 +27,7 @@ A tool never grants an ability its user did not already have. If something in th
 | **The pyramid principle** | Put the answer first and the support underneath — and, run bottom-up, work out what a pile of findings actually says | Proposed | [`pyramid-principle.md`](pyramid-principle.md) |
 | **The Eisenhower matrix** | Sort a list of work by two separate questions, urgent or not and important or not, and act per box, so the important work that is not urgent is not crowded out | Standard, on trial | [`eisenhower-matrix.md`](eisenhower-matrix.md) |
 | **The Pareto principle** (the 80/20 rule) | Measure how much of an effect each item causes, and find the few items that cause most of it, so effort goes there first and the rest is handled on purpose | Standard, on trial | [`pareto-principle.md`](pareto-principle.md) |
+| **The depth check** | Before starting a task that is not routine, answer four questions — what an expert would do that the task does not ask, the rawest material, the methods and tools, and what other than you shows the result is right — beside the task kept word for word, so the work goes deeper, not bigger, and arrives with a check someone else can run | Proposed | [`depth-check.md`](depth-check.md) |
 | **Dreamer, Realist, Critic** | Shape one solution in three passes held by different roles — the best version imagined, then made feasible without losing its value, then attacked with evidence — and loop until it has high value, is feasible, and has few or no expected downsides | Approved | [`dreamer-realist-critic.md`](dreamer-realist-critic.md) |
 
 **Status** says whether a person has approved the tool. A tool marked *Proposed* may be used, and its output says which tool produced it, so a person can judge the tool by its results; a tool marked *Approved* has been accepted as standard. A tool marked *Standard, on trial* has been accepted by a person as a standard to use where it fits, on condition that it shows its value in a trial; it stays only if it does. Nothing here is hidden from the people who have to live with it.
@@ -62,6 +63,7 @@ A tool belongs here when it is a repeatable way of thinking that more than one r
    | A list where what feels pressing keeps crowding out what matters | The Eisenhower matrix |
    | Many causes or items, and effort that should go where the effect is largest | The Pareto principle |
    | One solution that must be ambitious, feasible, and safe before anyone builds it | Dreamer, Realist, Critic |
+   | A clear task that is not routine, about to start, where the risk is shallow work: from a summary or memory, or with no check anyone else can run | The depth check |
    | A pile of findings with no conclusion yet | The pyramid principle, bottom-up |
    | An answer that has to reach a person who will act on it | The pyramid principle, top-down |
 
